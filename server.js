@@ -17,7 +17,7 @@ const wiadomoscSche = mongoose.model('WiadomoscSche', schemat);
 
 
 app.get('/', (req, res) => {
-    res.send('home');
+    res.render('home');
 });
 
 
@@ -46,4 +46,4 @@ app.post('/posts', (req, res) => {
     res.send("posts");
 });
 
-app.listen(3001, () => console.log('server dziala na 3001'));
+app.listen(process.env.PORT || 3001 , () => console.log(`server dziala na `));
