@@ -17,7 +17,7 @@ const wiadomoscSche = mongoose.model('WiadomoscSche', schemat);
 
 
 app.get('/', (req, res) => {
-    res.render('home');
+    res.send('home');
 });
 
 
